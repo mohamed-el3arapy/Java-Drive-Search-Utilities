@@ -185,7 +185,25 @@ java DriveSearcher
 ```
 
 ---
+## ⚡ Benchmark
 
+The following benchmark was performed using **DriveSearcher** on a local Windows machine.
+
+| Scenario | Drive | Files Scanned | Execution Time |
+|----------|:-----:|--------------:|---------------:|
+| Existing File | G: | 197,885 | 4.166 s |
+| Non-existing File | G: | 197,885 | 4.230 s |
+
+### Test Environment
+
+- Operating System: Windows
+- Search Method: Recursive Depth-First Search (DFS)
+- Search Scope: Entire `G:/` drive
+
+> **Note:** Benchmark values were collected from actual execution on the author's local machine. Results may vary depending on hardware specifications, storage type, operating system, and the number of files stored on the selected drive.
+
+
+---
 ## ⚠️ Notes
 
 - Searches are case-insensitive.
